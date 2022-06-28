@@ -57,30 +57,30 @@ Gather your Symbl credentials:
 
 This application offers two options for authorizing your Symbl account, in the application, or via the included token server.  Your Twilio account will be authorized via the token server.  
 
-The default behavior is for your Symbl account to authorize in-app.  A dialog box will be shown automatically if you're opening the app for the first time. In the [config.js](https://github.com/symblai/symbl-twilio-video-react/blob/a42d0394ae7ff7c67cdf35df0bd3b013a3cdcfb5/src/config.js#L5) file you will find `enableInAppCredentials` set to `true`.  For this option you are not required to update the [.env](https://github.com/symblai/symbl-twilio-video-react/blob/master/.env) file with Symbl credentials. 
+The default behavior is for your Symbl account to authorize in-app.  A dialog box will be shown automatically if you're opening the app for the first time. In the [config.js](https://github.com/SymblDev/symbl-twilio-video-react/blob/2b4e30bc8da0d691fb8d31e29e526f25c329515c/src/config.js#L5) file you will find `enableInAppCredentials` set to `true`.  For this option you are not required to update the [.env](https://github.com/SymblDev/symbl-twilio-video-react/blob/2b4e30bc8da0d691fb8d31e29e526f25c329515c/.env) file with Symbl credentials. 
 
 ![Symbl Credentials Dialog](./docs/symbl-credentials.png?v=4&s=100)
 
-If you are planning to use the included token server for generating your Symbl token you may disable the in app App ID/App Secret configuration. You can disable by setting `enableInAppCredentials` to `false` in the [config.js](https://github.com/symblai/symbl-twilio-video-react/blob/a42d0394ae7ff7c67cdf35df0bd3b013a3cdcfb5/src/config.js#L5)
+If you are planning to use the included token server for generating your Symbl token you may disable the in app App ID/App Secret configuration. You can disable by setting `enableInAppCredentials` to `false` in the [config.js](https://github.com/SymblDev/symbl-twilio-video-react/blob/2b4e30bc8da0d691fb8d31e29e526f25c329515c/src/config.js#L5)
 
-Store your Symbl credentials in the [.env](https://github.com/symblai/symbl-twilio-video-react/blob/master/.env) file.
+Store your Symbl credentials in the [.env](https://github.com/SymblDev/symbl-twilio-video-react/blob/2b4e30bc8da0d691fb8d31e29e526f25c329515c/.env) file.
 
 ```.env
 SYMBL_APP_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-SYMBL_APP_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+SYMBL_APP_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-Store your Twilio credentials in the [.env](https://github.com/symblai/symbl-twilio-video-react/blob/master/.env) file:
+Store your Twilio credentials in the [.env](https://github.com/SymblDev/symbl-twilio-video-react/blob/2b4e30bc8da0d691fb8d31e29e526f25c329515c/.env) file:
 1. In your Twilio console click on 'Settings' and take note of your Account SID.
 2. Navigate to Settings/API Keys to generate a new Key SID and Secret
 
 ```.env
 TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 TWILIO_API_KEY_SID=SKxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-TWILIO_API_KEY_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+TWILIO_API_KEY_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-The local token server is managed by [server.js](https://github.com/symblai/symbl-video-react/blob/master/server.js)
+The local token server is managed by [server.js](https://github.com/SymblDev/symbl-twilio-video-react/blob/2b4e30bc8da0d691fb8d31e29e526f25c329515c/server.js)
 
 Run the app locally with
 
@@ -175,5 +175,5 @@ This library is released under the [Apache License][license]
 [developer_community]: https://community.symbl.ai/?_ga=2.134156042.526040298.1609788827-1505817196.1609788827
 [slack]: https://join.slack.com/t/symbldotai/shared_invite/zt-4sic2s11-D3x496pll8UHSJ89cm78CA
 [signup]: https://platform.symbl.ai/?_ga=2.63499307.526040298.1609788827-1505817196.1609788827
-[issues]: https://github.com/symblai/symbl-for-zoom/issues
-[pulls]: https://github.com/symblai/symbl-for-zoom/pulls
+[issues]: https://github.com/SymblDev/symbl-twilio-video-react/issues
+[pulls]: https://github.com/SymblDev/symbl-twilio-video-react/pulls
